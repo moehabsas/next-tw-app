@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2024",
+    "lib": ["dom", "dom.iterable"],
+    "types": ["node"],
+    "strict": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "allowJs": true,
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
