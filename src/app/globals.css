@@ -19,6 +19,8 @@
   --foreground: oklch(0.985 0 0);
 }
 
-body {
-  @apply bg-background text-foreground font-sans;
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
 }
